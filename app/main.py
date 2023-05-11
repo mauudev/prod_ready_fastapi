@@ -22,3 +22,7 @@ async def request_error_internal(request, exc):
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
+
+@app.get("/hello")
+async def root():
+    return {"message": "Hello there !"}
